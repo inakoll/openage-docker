@@ -1,7 +1,7 @@
 openage:
   build: .
-  #command: ./run
-  command: bash
+  command: ./run
+  #command: bash
   #command: bash -c "make build tests && make checkall"
   environment:
       - DISPLAY
