@@ -1,0 +1,14 @@
+openage:
+  build: .
+  #command: ./run
+  command: bash
+  #command: bash -c "make build tests && make checkall"
+  environment:
+      - DISPLAY
+  devices:
+      - "/dev/snd:/dev/snd:rwm"
+  volumes:
+      - /tmp/.X11-unix:/tmp/.X11-unix
+      - /home/inakoll/PlayOnLinux's virtual drives/Steam/drive_c/Program Files/Steam/steamapps/common/Age2HD/:/app/age2dir
+      - /app/openage/assets
+  
