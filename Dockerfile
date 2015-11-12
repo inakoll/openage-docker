@@ -7,9 +7,13 @@ RUN apt-get update && apt-get install -y \
  libepoxy-dev \
  libsdl2-dev \
  ftgl-dev \
+ alsa-base \
+ alsa-utils \
+ alsa-oss \
  libsdl2-image-dev \
  libopusfile-dev \ 
  libfontconfig1-dev \
+ libharfbuzz-dev \
  opus-tools \
  python3-pil \
  python3-numpy \
@@ -44,4 +48,4 @@ RUN export uid=1000 gid=1000 && \
 USER developer
 ENV HOME /home/developer
 ENV AGE2DIR /app/age2dir
-
+ENV LANG C.UTF-8
